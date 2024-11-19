@@ -5,5 +5,5 @@
 
 (
 cd github.com/profskipulag/SS5401 &&
-    mdl --json .
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

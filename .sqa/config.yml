@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.1.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/profskipulag/SS5401:
       branch: main
@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/profskipulag/SS5401 git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-firebrick-quokka.sh
-        container: qc.acc_smelly-periwinkle-woodlouse
+        - /usr/bin/env sh .sqa/script.shaky-bistre-hound.sh
+        container: qc.acc_seedy-lilac-chinchilla
   QC.Doc:
     repos:
       github.com/profskipulag/SS5401 find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-chocolate-budgerigar.sh
-        container: qc.doc_droopy-purple-coati
+        - /usr/bin/env sh .sqa/script.randy-olivine-fox.sh
+        container: qc.doc_blurry-cerise-slug
       github.com/profskipulag/SS5401 git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-apricot-dalmatian.sh
-        container: qc.doc_shaggy-white-hyena
+        - /usr/bin/env sh .sqa/script.nippy-emerald-akbash.sh
+        container: qc.doc_surly-khaki-mastiff
       github.com/profskipulag/SS5401 markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-harlequin-numbat.sh
-        container: qc.doc_snoopy-indigo-cougar
+        - /usr/bin/env sh .sqa/script.slaphappy-ochre-chicken.sh
+        container: qc.doc_bumpy-amethyst-fly
   QC.Lic:
     repos:
       github.com/profskipulag/SS5401 licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-sepia-quetzal.sh
-        container: qc.lic_sleazy-orange-newt
+        - /usr/bin/env sh .sqa/script.beady-brass-lobster.sh
+        container: qc.lic_queasy-teal-otter
   QC.Sec:
     repos:
       github.com/profskipulag/SS5401 bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-tomato-bordeaux.sh
-        container: qc.sec_wheezy-pumpkin-budgerigar
+        - /usr/bin/env sh .sqa/script.baggy-turquoise-rattlesnake.sh
+        container: qc.sec_muggy-sapphire-boar
   QC.Sty:
     repos:
       github.com/profskipulag/SS5401 flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-lavender-barb.sh
-        container: qc.sty_shaky-pumpkin-dolphin
+        - /usr/bin/env sh .sqa/script.lousy-mustard-shrew.sh
+        container: qc.sty_cozy-alizarin-russel
       github.com/profskipulag/SS5401 hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-purple-monkey.sh
-        container: qc.sty_slaphappy-champagne-sloth
+        - /usr/bin/env sh .sqa/script.cloudy-aquamarine-tarantula.sh
+        container: qc.sty_beady-aqua-pig
   QC.Uni:
     repos:
       github.com/profskipulag/SS5401 pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-ecru-mayfly.sh
-        container: qc.uni_cranky-flax-sheepdog
+        - /usr/bin/env sh .sqa/script.randy-rose-harrier.sh
+        container: qc.uni_skinny-maroon-kingfisher
   QC.Ver:
     repos:
       github.com/profskipulag/SS5401 get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-zucchini-hedgehog.sh
-        container: qc.ver_flimsy-ruby-markhor
+        - /usr/bin/env sh .sqa/script.homely-linen-orangutan.sh
+        container: qc.ver_flimsy-periwinkle-llama
 timeout: 5400

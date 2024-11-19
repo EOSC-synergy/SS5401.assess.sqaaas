@@ -5,5 +5,5 @@
 
 (
 cd github.com/profskipulag/SS5401 &&
-    git rev-parse --is-inside-work-tree
+    mdl --json  .
 )
